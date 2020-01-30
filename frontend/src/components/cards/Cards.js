@@ -56,6 +56,12 @@ const Cards = props => {
         </div>
       </div>
     );
+  } else if (deck.length === 0) {
+    return (
+      <div className='no-archived'>
+        <p>You have no cards in this deck available to study!</p>
+      </div>
+    );
   } else {
     return (
       <div className='page'>
